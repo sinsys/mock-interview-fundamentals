@@ -7,6 +7,7 @@
 		<title>Mock Interview - Web Fundamentals</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	</head>
@@ -16,7 +17,40 @@
 			<div class="logo"></div>
 			<h1>Interview Prep</h1>
 		</header>
-		<h1>Hello world</h1>
+		<main>
+			<section class="questions">
+				<h2>General Questions</h2>
+				<blockquote>What are your greatest strengths as a web developer?</blockquote>
+				<p class="asp-answer">I definitely like to experiment with impactful things that aren't noticeable. I'm rarely satisfied with the basics. For example, I even made this a slightly different text just to do so. It's not obtrusive, but it's noticeable now that I've mentioned it.</p>
+				<blockquote>What experience do you have working in a fast-paced environment?</blockquote>
+				<p class="asp-answer">I've done a lot of agile sprints, kaizens, and rapid development as an independent freelancer as well as developing for large companies. The one major thing I've learned in my experience with is that if you don't move fast and stay up to date on new technologies, you won't succeed.</p>
+				<blockquote>What technologies are you most excited to learn?</blockquote>
+				<p class="asp-answer">Node.js in particular. I have an extensive background in the front-end world and I want to be able to utilize a back-end to do more data manipulation, storage, algorthims, and service.</p>
+			</section>
+
+			<section>
+				<h2>Technical Questions</h2>
+				<blockquote>What is the purpose of the doctype command?</blockquote>
+				<p class="asp-answer">The <code>DOCTYPE</code> is determined to allow the browser to understand that it's an HTML page - usually used for HTML5 declaration with our current <code>!DOCTYPE html</code></p>
+				<blockquote>What is a <code>head</code> element?</blockquote>
+				<p class="asp-answer">The <code>head</code> is used as a sort of precursor to how the document should load. Nothing in the <code>head</code> is actually in the DOM, but rather is just a place to load CSS, meta tags, and JavaScript files if needed. It houses things like the <code>title</code> of the page (which is what a tab will show). It essentially acts as a preliminary assessment of the page and is often used with web crawlers to determine the relevance of your page.</p>
+				<blockquote>What is semantic HTML, and why is it important?</blockquote>
+				<p class="asp-answer">Semantic HTML is a fancy term for well-formed HTML. A <code>nav</code> shouldn't be in an area that isn't navigation. A <code>section</code> shouldn't be a replacement for a <code>div</code>. All of your tags should be closed properly if they aren't self closing tags (hr, br, input, etc). Semantic HTML simply means your code is clean, indented properly, and your elements are used when they're intended to be used. <code>nav, header, main, footer</code>. Use them properly.
+				<blockquote>What is the difference between classes and IDs in HTML and CSS?</blockquote>
+				<p class="asp-answer">A class should be used if possible. IDs are unique per page and are, well, identifiers; they cannot be duplicated. If you can be absolutely sure that only one instance of an element will ever exist on the page, an ID is fine to use. They're very helpful with things like forms or header elements, but more often than not you can use a class to avoid the trouble.
+				<br />Classes can be applied wherever you'd like and apply things like JavaScript logic or CSS styles, but you only get <b>one</b> unique ID. That being said, adding IDs to forms like <code>#signup-name</code> or <code>#signup-password</code> is totally reasonable. Just avoid them if its not necessary.
+				<blockquote>What does <code>* { box-sizing: border-box; }</code> do? What are its advantages?</blockquote>
+				<p class="asp-answer">Calling it a night....</p>
+<!-- 				How is an inline element different from a block level element?
+				What's an example of a situation where you would use a <form> element?
+				What are media queries?
+				Why is flexbox valuable?
+				What is a function?
+				We use Git for collaboration on our teams here. What can you tell me about your experience with Git? What projects have you used Git with, and how did it help you?
+				When using Git, what is a merge conflict and how do you handle it?
+				You've just been given a design and wireframe for a new web page. Share your screen and show me how you would go about setting this project up with Git and GitHub. -->
+			</section>
+		</main>
 
 	<script type="text/javascript" src="js/script.js"></script>
 	</body>

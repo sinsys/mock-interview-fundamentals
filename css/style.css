@@ -31,3 +31,22 @@ header {
 }
 
 /*MAIN*/
+blockquote {
+	background: #F3F3F3;
+	padding: 1rem;
+	font-weight: bold;
+}
+.asp-answer {
+	margin-left: 3rem;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+h2 {
+	margin-left: 2rem;
+}
+code {
+	background: #EEE;
+	color: #EE3300;
+	padding: 2px;
+}
