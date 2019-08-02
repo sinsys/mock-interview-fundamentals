@@ -38,17 +38,25 @@
 				<p class="asp-answer">Semantic HTML is a fancy term for well-formed HTML. A <code>nav</code> shouldn't be in an area that isn't navigation. A <code>section</code> shouldn't be a replacement for a <code>div</code>. All of your tags should be closed properly if they aren't self closing tags (hr, br, input, etc). Semantic HTML simply means your code is clean, indented properly, and your elements are used when they're intended to be used. <code>nav, header, main, footer</code>. Use them properly.
 				<blockquote>What is the difference between classes and IDs in HTML and CSS?</blockquote>
 				<p class="asp-answer">A class should be used if possible. IDs are unique per page and are, well, identifiers; they cannot be duplicated. If you can be absolutely sure that only one instance of an element will ever exist on the page, an ID is fine to use. They're very helpful with things like forms or header elements, but more often than not you can use a class to avoid the trouble.
-				<br />Classes can be applied wherever you'd like and apply things like JavaScript logic or CSS styles, but you only get <b>one</b> unique ID. That being said, adding IDs to forms like <code>#signup-name</code> or <code>#signup-password</code> is totally reasonable. Just avoid them if its not necessary.
+				<br>Classes can be applied wherever you'd like and apply things like JavaScript logic or CSS styles, but you only get <b>one</b> unique ID. That being said, adding IDs to forms like <code>#signup-name</code> or <code>#signup-password</code> is totally reasonable. Just avoid them if its not necessary.
 				<blockquote>What does <code>* { box-sizing: border-box; }</code> do? What are its advantages?</blockquote>
-				<p class="asp-answer">Calling it a night....</p>
-<!-- 				How is an inline element different from a block level element?
-				What's an example of a situation where you would use a <form> element?
-				What are media queries?
-				Why is flexbox valuable?
-				What is a function?
-				We use Git for collaboration on our teams here. What can you tell me about your experience with Git? What projects have you used Git with, and how did it help you?
-				When using Git, what is a merge conflict and how do you handle it?
-				You've just been given a design and wireframe for a new web page. Share your screen and show me how you would go about setting this project up with Git and GitHub. -->
+				<p class="asp-answer">When you declare <code>box-sizing: border-box</code>, you're telling the browser that any margin, padding, or border should be inclusive with it's defined width and height. It's paramount when using Flexbox, Bootstrap, Foundation, or even your own custom grid system. The default box model will almost always break your page due to margin/padding/border extending outside of your specified dimensions.</p>
+				<blockquote>How is an inline element different from a block level element?</blockquote>
+				<p class="asp-answer">Block level elements take up 100% width by default and can be set widths if defined. 
+				<br>Inline elements such as <code>span</code>s will flow on the same row as long as there is space.
+				<blockquote>What's an example of a situation where you would use a <code>form</code> element?</blockquote>
+				<p class="asp-answer">Have you ever signed up for a website? Have you ever submitted a poll response? If you need user <code>input</code> you will likely use a <code>form</code>. The most common example is a login <code>form</code>.
+				<blockquote>What are media queries?</blockquote>
+				<p class="asp-answer">Media queries are methods to provide different styles to different screen sizes, devices, pixel densities, etc. We no longer live in a world where we expect people to view our pages on desktops or laptops. And every phone is different. And landscape provides a different aspect ratio to portrait. Times have changed, so we need to use <code>@media</code> queries to ensure everyone gets a good experience.
+				<blockquote>Why is flexbox valuable?</blockquote>
+				Holy moly. If you lived 10 years ago and tried to vertically center something... you were a god. Flexbox allows us to position elements in an intuitive way, meaning percentage-based, without using percents. Based on the variety of devices people browse on these days, Flexbox is the holy grail of positioning without downloading external frameworks such as Foundation or Bootstrap.
+				<blockquote>What is a function?</blockquote>
+				<p class="asp-answer">A function is a block of code we execute. Sounds simple. It's absurdly powerful. You can make any function you want, which can accept other functions, or any parameters, and do whatever you'd like with the data. <code>functions</code> define interactivity on the web.
+				<blockquote>We use Git for collaboration on our teams here. What can you tell me about your experience with Git? What projects have you used Git with, and how did it help you?</blockquote>
+				<p class="asp-answer">Edit -> Undo is only so good... What if you realized your new development totally broke your co-worker's feature he spent 12 hours on last night?<br>
+				Sleepover time to compare and contrast computer code!... no.... both of you should just work on a separate branch and merge any conflicts you have, even working on the same file. I've had too many all-nighters comparing code decades ago. Git provides a very powerful version-control system that allows <em>hundreds</em> of people to work on the same thing. The key is that the ultimate merge is all deterministic on what works best. While a manager assigning hundreds of people on one project is a bad idea, git allows people to work on different bugs/features with very little conflict.</p>
+				<blockquote>When using Git, what is a merge conflict and how do you handle it?</blockquote>
+				<p class="asp-answer">A merge conflict arrises when multiple commits (usually on different branches) conflict with the same line of code. It's sort of a pain, but git has a method to view all of the changes that are proposed. Generally the most important feature is delegated to be priority and merged into the master code. The secondary feature/bug-fix/etc then uses that as a basis to implement what they've been working on.</p>	
 			</section>
 		</main>
 
