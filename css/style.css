@@ -50,3 +50,8 @@ code {
 	color: #EE3300;
 	padding: 2px;
 }
+
+.red-sans-serif {
+	font-family: sans-serif;
+	color: #F00;
+}
