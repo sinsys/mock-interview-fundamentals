@@ -28,7 +28,7 @@
 				<p class="asp-answer">Node.js in particular. I have an extensive background in the front-end world and I want to be able to utilize a back-end to do more data manipulation, storage, algorthims, and service.</p>
 			</section>
 
-			<section>
+			<section class="tech_questions">
 				<h2>Technical Questions</h2>
 				<blockquote>What is the purpose of the doctype command?</blockquote>
 				<p class="asp-answer">The <code>DOCTYPE</code> is determined to allow the browser to understand that it's an HTML page - usually used for HTML5 declaration with our current <code>!DOCTYPE html</code></p>
@@ -57,16 +57,33 @@
 				Sleepover time to compare and contrast computer code!... no.... both of you should just work on a separate branch and merge any conflicts you have, even working on the same file. I've had too many all-nighters comparing code decades ago. Git provides a very powerful version-control system that allows <em>hundreds</em> of people to work on the same thing. The key is that the ultimate merge is all deterministic on what works best. While a manager assigning hundreds of people on one project is a bad idea, git allows people to work on different bugs/features with very little conflict.</p>
 				<blockquote>When using Git, what is a merge conflict and how do you handle it?</blockquote>
 				<p class="asp-answer">A merge conflict arrises when multiple commits (usually on different branches) conflict with the same line of code. It's sort of a pain, but git has a method to view all of the changes that are proposed. Generally the most important feature is delegated to be priority and merged into the master code. The secondary feature/bug-fix/etc then uses that as a basis to implement what they've been working on.</p>	
+				<blockquote>When using Git, what is a merge conflict and how do you handle it?</blockquote>
+				<p class="asp-answer">A merge conflict arrises when multiple commits (usually on different branches) conflict with the same line of code. It's sort of a pain, but git has a method to view all of the changes that are proposed. Generally the most important feature is delegated to be priority and merged into the master code. The secondary feature/bug-fix/etc then uses that as a basis to implement what they've been working on.</p>	
 			</section>
 			<hr>
-			<section>
+			<section class="live-coding-section">
 				<h2>Live coding challenges</h2>
-				<blockquote>In a text editor, create a static web page that says "Hello Interview!" in red, sans-serif font and includes a title element. </blockquote>
-				<div class="hello-interview">
-					<h2 class="red-sans-serif">Hello Interview!</h2>
+				<p class="asp-answer">I figured the best way to convey these in a static page would be to make separate HTML docs and to place them into <code>&lt;iframes&gt;</code>.</p>
+				<div class="coding-challenges-item">
+					<blockquote>In a text editor, create a static web page that says "Hello Interview!" in red, sans-serif font and includes a title element. </blockquote>
+					<div class="iframe">
+						<iframe src="./hello-interview.html"></iframe>
+					</div>
+				</div>
+				<div class="coding-challenges-item">
+					<blockquote>This project was started by 1 of your designers, and they are having some trouble getting the layout correct.
+						<ul>
+							<li>First, they used all div tags, so there's no way of knowing what the content is. Re-structure the HTML with semantic tags.</li>
+							<li>Second, this page is not accessible. Re-structure the HTML to make it work correctly for screen readers.</li>
+							<li>Next, there's an awful looking white bar at the top. The goal is to get the header to have a full-width image, with a centered title.</li>
+							<li>Finally, you will see 3 green textBoxes. They should line up in a single row.</li>
+						</ul>
+					</blockquote>
+					<div class="iframe">
+						<iframe src="./about-me-eval-question.html" height="400px"></iframe>
+					</div>
 				</div>
 			</section>
-			.... k actually going to bed now
 		</main>
 
 	<script type="text/javascript" src="js/script.js"></script>

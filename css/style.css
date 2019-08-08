@@ -35,13 +35,33 @@ blockquote {
 	background: #F3F3F3;
 	padding: 1rem;
 	font-weight: bold;
+	transition: background 0.3s ease, padding 0.3s ease;
+	border-radius: 3rem;
+	cursor: pointer;
 }
 .asp-answer {
 	margin-left: 3rem;
 	font-family: 'Open Sans', sans-serif;
-
+	display: none;
 }
-
+blockquote:before {
+    content: "+";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+blockquote:hover {
+	background: #E3E3E3;
+}
+blockquote.expanded {
+	background: #A1CFED;
+	padding-left:2rem;
+}
+blockquote.expanded:before {
+	content: "-";
+}
 h2 {
 	margin-left: 2rem;
 }
@@ -54,4 +74,21 @@ code {
 .red-sans-serif {
 	font-family: sans-serif;
 	color: #F00;
+}
+.coding-challenges {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.iframe {
+	margin: auto;
+	display: none;
+}
+iframe {
+	border: 0;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+	margin: auto;
+	display: block;
+	width: 75%;
 }

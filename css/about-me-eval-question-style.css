@@ -1,0 +1,34 @@
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color:black;
+  background-image:url(https://images.unsplash.com/photo-1451444635319-e5e247fbb88d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=704d9fef9d122240e6e467de7755fc5c);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-align:center; 
+  color:white;
+  margin: auto;
+}
+.mainSection {
+  display: flex;
+}
+.textBlock{
+  width:33.3%;
+  background-color:lightgreen;
+  padding:15px;
+  display:inline-block;
+  margin: 1rem;
+}
