@@ -6,3 +6,4 @@ $(function(){
 		$(this).toggleClass('expanded');
 	});
 });
+
